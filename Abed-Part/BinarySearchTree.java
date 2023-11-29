@@ -16,7 +16,8 @@ public class BinarySearchTree {
 
     private Node insertRec(Node root, String key, Song song) {
         if (root == null) {
-            return new Node(key, song);
+            root = new Node(key , song);
+            return root;
         }
 
         if (key.compareTo(root.getData()) < 0) {
